@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 2vw 6vw;
+  background-color: #000000;
+  color: white;
+}
+section {
+  margin: 4.5rem 0;
+}
+p {
+  line-height: 140%;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  /* line-height: 120%; */
+}
+.font-style {
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.38rem;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  background-color: #e6533c;
+  color: white;
+  font-size: 1.13rem;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  margin-top: 2rem;
+  border-radius: 2.5rem;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > h3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #e6533c;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem;
+}
+/* @media screen and(max-width:576px) {
+  .nav-links {
+    display: none;
+  }
+} */
+/* main sections styles */
+.section1 {
+  display: flex;
+}
+.section1-left {
+  width: 50%;
+}
+h1 {
+  font-size: 4.88rem;
+  font-weight: 900;
+  line-height: 120%;
+  padding: 0;
+}
+.two-btn {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 5px;
+}
+.section1-right {
+  width: 50%;
+  position: relative;
+}
+.section1-right img {
+  width: 100%;
+}
+.tutorial {
+  display: block;
+  width: 200px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(178, 173, 173);
+  opacity: 50%;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+.round {
+  width: 30px;
+  height: 30px;
+  background-color: #e6533c;
+  border-radius: 50%;
+}
+.absolute1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+.free-videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 5rem;
+  background-color: rgb(175, 170, 170);
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+/* Your Habits Section styles */
+.habits-section {
+  text-align: center;
+}
+.habits-img-container {
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.habits-img-container img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 1rem 0;
+}
+.habit-card {
+  padding: 2rem;
+}
+
+/* Run an Extra mile section styles */
+.run-section {
+  background-color: rgb(40, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.run-section-right > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.run-section-left {
+  width: 60%;
+  padding: 1rem;
+}
+.run-section-right {
+  width: 40%;
+}
+
+.collage-img-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.collage-img-section img {
+  width: 100%;
+}
+
+.p-1 {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+}
+.p-2 {
+  position: absolute;
+  top: 3rem;
+  bottom: 3rem;
+}
+.p-3 {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+}
+
+/* BMI Calculator section styles */
+.bmi-calculator-section {
+  background-color: rgb(50, 50, 50);
+  margin: 0;
+  padding: 1rem;
+}
+.bmi-calculator-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.bmi-heading {
+  width: fit-content;
+  margin: 0 auto;
+}
+caption {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: left;
+}
+.bmi-container-right > h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+form {
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+input,
+select {
+  width: auto;
+  background-color: gray;
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+/* form input,
+select {
+  width: 10rem;
+} */
+/* Meet Our Team section styles */
+.team-meet-section {
+  /* background-color: gainsboro; */
+}
+.meet-team-title {
+  text-align: center;
+}
+.team-card-container {
+  background-color: rgb(50, 50, 50);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+.meet-card {
+  padding: 1rem;
+  position: relative;
+}
+.meet-card h4 {
+  position: absolute;
+  left: 18%;
+  bottom: 18%;
+}
+.meet-card p {
+  position: absolute;
+  left: 18%;
+  bottom: 12%;
+}
+.meet-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+/* fitness-section styles */
+#fit-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #e6533c;
+}
+.fitness-section li {
+  margin: 0.5rem;
+  list-style: none;
+}
+.fitness-section a {
+  text-decoration: none;
+  color: white;
+}
+.fitness-section {
+  padding: 1.5rem;
+  margin-bottom: none;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+  .habits-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section1-left,
+  .section1-right {
+    width: 100%;
+    text-align: center;
+  }
+  .two-btn {
+    flex-direction: column;
+    gap: 2px;
+    margin-top: none;
+  }
+  .run-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .run-section-left > button {
+    width: 100%;
+  }
+  .run-section-left,
+  .run-section-right {
+    width: 100%;
+  }
+  .bmi-calculator-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fitness-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
